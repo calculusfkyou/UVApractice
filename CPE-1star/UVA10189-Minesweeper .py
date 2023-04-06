@@ -45,7 +45,7 @@ while True:
 							count+=1
 						if field[i+1][j-1]=="*":
 							count+=1
-					elif j==0 and i==n-1:#右下
+					elif j==m-1 and i==n-1:#右下
 						if field[i-1][j]=="*":
 							count+=1
 						if field[i-1][j-1]=="*":
