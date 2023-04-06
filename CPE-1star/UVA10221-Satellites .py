@@ -1,3 +1,4 @@
+#就是一個公式，可以記
 import math
 s,distance=0,0
 while True:

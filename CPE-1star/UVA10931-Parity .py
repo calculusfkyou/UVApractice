@@ -1,3 +1,4 @@
+#計算輸入轉換成二進位後有多少個1
 while True:
 	try:
 		n=int(input())

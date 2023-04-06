@@ -1,3 +1,4 @@
+#氣泡排序，由小到大，計算交換的次數
 def bbsort(subnum):
 	count=0
 	for k in range(len(subnum)-1):

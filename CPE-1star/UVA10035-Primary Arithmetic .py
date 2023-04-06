@@ -1,3 +1,4 @@
+#計算進位次數
 while True:
 	try:
 		n,m=map(int,input().split())

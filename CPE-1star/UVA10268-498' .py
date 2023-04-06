@@ -1,3 +1,4 @@
+#按照他給的第二個式子求導數即可
 while True:
 	try:
 		x=int(input())

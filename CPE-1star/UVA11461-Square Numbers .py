@@ -1,3 +1,4 @@
+#判斷範圍內的完全平方數有幾個
 import math
 while True:
 	try:

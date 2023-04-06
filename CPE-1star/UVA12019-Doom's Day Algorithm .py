@@ -1,3 +1,4 @@
+#計算那天是星期幾，我暴力解
 while True:
 	try:
 		case=int(input())

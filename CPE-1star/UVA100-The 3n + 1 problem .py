@@ -1,3 +1,4 @@
+#照題目給的計算，印出計算後的長度
 while True:
 	try:
 		temp,temp2=[],[]

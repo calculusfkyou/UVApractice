@@ -1,4 +1,5 @@
-I:
+#用1 0 轉換成費式數列的樣子
+#1
 list=[1,1]
 for i in range(2,2000):
     list.append(list[i-1]+list[i-2])
@@ -29,7 +30,7 @@ while True:
     except EOFError:
         break
 
-II:
+#2
 listP=[]
 listP.append(0)
 listP.append(1)

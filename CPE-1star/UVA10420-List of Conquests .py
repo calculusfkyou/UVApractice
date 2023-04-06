@@ -1,3 +1,4 @@
+#只有兩個國家，直接算就好
 while True:
 	try:
 		n=int(input())

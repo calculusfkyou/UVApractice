@@ -1,3 +1,4 @@
+#計算每個位數相加，直到小於10
 while True:
 	try:
 		n=int(input())

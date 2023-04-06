@@ -1,3 +1,4 @@
+#先判斷是否為質數，不是則不為prime，再判斷reverse過是否為質數，是則為emirp，不是則為prime
 while True:
 	try:
 		N=int(input())

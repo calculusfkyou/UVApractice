@@ -1,3 +1,4 @@
+#照他給的公式寫
 import math
 while True:
 	try:

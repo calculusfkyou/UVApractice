@@ -1,3 +1,4 @@
+#是否為11的倍數
 while True:
 	try:
 		n=int(input())

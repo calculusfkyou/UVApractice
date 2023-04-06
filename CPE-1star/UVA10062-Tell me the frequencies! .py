@@ -1,3 +1,6 @@
+#輸出以出現次數優先，小到大排序，若有相同，再以ascii大小排序
+#每組輸出空一行，最後一組不空
+#我用二維陣列，chr(數字)=ascii文字，ord(ascii文字)=數字
 check=1
 while True:
 	try:

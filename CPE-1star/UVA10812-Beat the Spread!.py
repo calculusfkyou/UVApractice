@@ -1,3 +1,4 @@
+#兩數加起來除2和兩數相減除2
 while True:
 	try:
 		n=int(input())
