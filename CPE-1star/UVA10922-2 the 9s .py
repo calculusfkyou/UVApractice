@@ -8,7 +8,7 @@ while True:
 		else:
 			temp=0
 			subN=N
-			degree=1
+			degree=0
 			while subN%9==0:
 				while subN>0:
 					temp+=subN%10
@@ -16,6 +16,9 @@ while True:
 				if temp%9==0:
 					degree+=1
 				subN=temp
+				temp=0
+				if subN==9:#注意變成9的時候
+					break
 			print("%d is a multiple of 9 and has 9-degree %d."%(N,degree))
 	except:
 		break
