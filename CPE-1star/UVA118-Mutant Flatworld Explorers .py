@@ -1,3 +1,4 @@
+#給定一個範圍(x,y)，根據方位然後移動若超出範圍，機器人會掉下去並會在超出前的格子標記，往後的機器人若到此格子，則無視掉下去的指令
 def direction(instruction,side):
 	if side=="E":
 		if instruction=="R":
