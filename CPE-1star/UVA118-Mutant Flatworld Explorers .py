@@ -32,11 +32,11 @@ while True:
 		for i in range(len(instructions)):
 			if instructions[i]!=" ":
 				subside=side
+				subX=initialX
+				subY=initialY
 				if instructions[i]=="R" or instructions[i]=="L":
 					side=direction(instructions[i],side)
 				else:
-					subX=initialX
-					subY=initialY
 					if side=="E":
 						initialX+=1
 					elif side=="W":
