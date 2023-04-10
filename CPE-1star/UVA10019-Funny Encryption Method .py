@@ -1,3 +1,4 @@
+# 輸入一十進位數，計算其二進位和十六進位有多少個1
 while True:
 	try:
 		n=int(input())
