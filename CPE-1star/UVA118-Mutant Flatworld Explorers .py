@@ -22,7 +22,8 @@ def direction(instruction,side):
 			return "E"
 
 x,y=map(int,input().split())
-world= [[1 for i in range(x)] for j in range(y)]
+world= [[1 for i in range(x+1)] for j in range(y+1)]
+#print(world)
 while True:
 	try:
 		initialX,initialY,side=input().strip(" ").split()
@@ -31,6 +32,7 @@ while True:
 		initialY=int(initialY)
 		subX,subY,check,subside=0,0,0,""
 		for i in range(len(instructions)):
+			#print("%d %d %s"%(initialX,initialY,side))
 			if instructions[i]!=" ":
 				subside=side
 				subX=initialX
@@ -46,15 +48,16 @@ while True:
 						initialY+=1
 					elif side=="S":
 						initialY-=1
+				print("%d %d"%(subX,subY))
 				if initialX>x or initialX<0 or initialY>y or initialY<0:
-					if world[subX-1][subY-1]!=0:
-						world[subX-1][subY-1]=0
+					if world[subY][subX]!=0:
+						world[subY][subX]=0
 						check=1
 						break
 					else:
 						initialX=subX
 						initialY=subY
-					
+
 		if check==1:
 			print("%d %d %s LOST"%(subX,subY,subside))
 		else:
