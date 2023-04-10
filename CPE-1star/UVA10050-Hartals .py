@@ -8,7 +8,7 @@ while True:
             hartal = []
             for j in range(p):#有多少政黨的罷會週期
                 h = int(input())#幾天罷一次
-                for k in range(1, day):#倍數存取，不大於所給天數
+                for k in range(1, day+1):#倍數存取，不大於所給天數
                     if h*k > day:
                         break
                     else:
@@ -17,10 +17,9 @@ while True:
 
             temp = []
             for l in range(len(hartal)):
-                same = hartal.count(hartal[l])#這行沒必要
-                if same > 1:                  #這行沒必要
-                    if hartal[l] not in temp:#只收不一樣的日子
-                        temp.append(hartal[l])
+                same = hartal.count(hartal[l])#這行沒必要     
+                if hartal[l] not in temp:#只收不一樣的日子
+                    temp.append(hartal[l])
 
             for a in temp:
                 if a % 7 != 0 and a % 7 != 6:#排除星期五，星期六
