@@ -13,3 +13,19 @@ while True:
 		print(int(ans))
 	except EOFError:
 		break
+
+#2
+while True:
+	try:
+		x=int(input())
+		n=list(map(int,input().split()))
+		nn=len(n)-1
+		nnn=len(n)-2
+		ans=0
+		for i in range(len(n)-1):
+			ans+=nn*n[i]*(x**nnn)
+			nn-=1
+			nnn-=1
+		print(int(ans))
+	except:
+		break
