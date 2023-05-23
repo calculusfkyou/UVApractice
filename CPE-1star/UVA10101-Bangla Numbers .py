@@ -19,7 +19,6 @@ while True:
 					temp2=n%10	
 					if temp2!=0:
 						temp.append("shata")
-					if temp2!=0:
 						temp.append(temp2)
 					n=n//10
 					if n==0:
@@ -28,7 +27,6 @@ while True:
 					temp2=n%100	
 					if temp2!=0:
 						temp.append("hajar")
-					if temp2!=0:
 						temp.append(temp2)
 					n=n//100
 					if n==0:
@@ -37,7 +35,6 @@ while True:
 					temp2=n%100	
 					if temp2!=0:
 						temp.append("lakh")
-					if temp2!=0:
 						temp.append(temp2)
 					n=n//100
 					if n==0:
