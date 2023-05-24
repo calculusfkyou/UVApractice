@@ -50,3 +50,23 @@ for i in range(N):
 				if num==0:
 					break
 	print("%d = %d (fib)"%(NUM,ans))
+
+#3
+listP=[]
+listP.append(0)
+listP.append(1)
+for i in range(2,1000):
+	listP.append(listP[i-1]+listP[i-2])	
+listP.pop(0)
+listP.pop(0)
+listP.reverse()
+while True:
+    try:
+        N=int(input())
+        ans=[]
+        check=0
+        for i in range(len(listP)):
+            if N>=listP[i]:
+                  
+    except:
+        break
