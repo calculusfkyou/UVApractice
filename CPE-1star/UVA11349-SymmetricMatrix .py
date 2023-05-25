@@ -25,11 +25,14 @@ while True:
 					temp.reverse()
 					if temp==matrix[i]:
 						check+=1
-				temp=matrix[mid]
+				temp.clear()
+				for i in matrix[mid]:
+					temp.append(i)
 				temp.reverse()
-				if temp==matrix[mid]:
-					check+=1
-				if check==mid+1:
+				if temp!=matrix[mid]:
+					print("Test #%d: Non-symmetric."%(Test))
+					Test+=1
+				elif check==mid:
 					print("Test #%d: Symmetric."%(Test))
 					Test+=1
 				else:
