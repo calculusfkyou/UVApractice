@@ -1,3 +1,4 @@
+#計算出現次數，字母同次數則用ascii排
 while True:
     try:
         n=int(input())
