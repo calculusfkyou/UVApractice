@@ -1,3 +1,4 @@
+#
 case=1
 n=int(input())
 for c in range(n):
