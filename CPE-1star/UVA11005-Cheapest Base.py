@@ -1,4 +1,4 @@
-#
+#找到最小進為花費，若有相同的，則也印出，建議收看: https://www.youtube.com/watch?v=z8cM3pTXqUI
 case=1
 n=int(input())
 for c in range(n):
