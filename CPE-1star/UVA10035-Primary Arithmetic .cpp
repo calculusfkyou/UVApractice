@@ -10,18 +10,17 @@ int main() {
         }
 
         int carry = 0;
-        while (true) {
-            if (n == 0 && m == 0) {
-                break;
-            }
-            if ((n % 10) + (m % 10) >= 10) {
+        int carryDigit = 0;
+        while (n > 0 || m > 0) {
+            int digitSum = (n % 10) + (m % 10) + carryDigit;
+            if (digitSum >= 10) {
                 carry++;
-                n = n / 10 + 1;
-                m = m / 10;
+                carryDigit = 1;
             } else {
-                n = n / 10;
-                m = m / 10;
+                carryDigit = 0;
             }
+            n /= 10;
+            m /= 10;
         }
 
         if (carry == 0) {
