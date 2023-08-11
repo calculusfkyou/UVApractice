@@ -14,3 +14,22 @@ while True:
 		print(n)
 	except EOFError:
 		break
+
+# V2
+def stoi(num):
+    for i in range(len(num)):
+        num[i]=int(num[i])
+    return num
+while True:
+    try:
+        n=list(input())
+        if n==["0"]:
+        	break
+        ans=n[0]
+        while len(n)>1:
+            n=stoi(n)
+            ans=sum(n)
+            n=list(str(ans))
+        print(ans)
+    except:
+        break
