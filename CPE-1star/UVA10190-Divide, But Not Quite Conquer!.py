@@ -19,11 +19,21 @@ while True:
 	print()
 	data=[] 
        
- 
-         
- 
-  
- 
-  
- 
-   
+# V2
+while True:
+	try:
+		n,m=map(int,input().split())
+		ans=[n]
+		if m==1 or m==0:
+			print("Boring!")
+		else:
+			while n-int(n)==0 and n!=1:
+				n=n/m
+				if n-int(n)==0:
+					ans.append(int(n))
+			if ans[-1]==1:
+				print(*ans)
+			else:
+				print("Boring!")
+	except EOFError:
+		break     
