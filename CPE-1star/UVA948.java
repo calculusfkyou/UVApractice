@@ -46,5 +46,6 @@ public class UVA948 {
                 break;
             }
         }
+        scanner.close();
     }
 }
