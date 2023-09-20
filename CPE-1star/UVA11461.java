@@ -5,51 +5,20 @@ public class UVA11461 {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             try {
-                int a = scanner.nextInt(), b = scanner.nextInt();
-                if (a == 0 && b == 0)
+                int beginNumber = scanner.nextInt(), endNumber = scanner.nextInt(); // 題目輸入
+                if (beginNumber == 0 && endNumber == 0) // 若兩數皆等於0，則終止輸入
                     break;
                 int countSquareNumbers = 0;
-                for (int i = a; i <= b; i++) {
-                    double square = Math.sqrt(i);
+                for (int i = beginNumber; i <= endNumber; i++) { // 遍歷 beginNumber ~ endNumber 之間的整數
+                    double square = Math.sqrt(i); // 判斷是否為完全平方數
                     if (square - (int) square == 0)
-                        countSquareNumbers += 1;
+                        countSquareNumbers += 1; // 符合條件者 countSquareNumbers 加1
                 }
-                System.out.println(countSquareNumbers);
-            } catch (Exception e) {
+                System.out.println(countSquareNumbers); // 輸出答案
+            } catch (Exception e) { // 例外處理
                 break;
             }
         }
-        scanner.close();
+        scanner.close(); // 關閉輸入
     }
 }
-
-// v2
-
-// public class UVA11461 {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-
-//         while (true) {
-//             int a = scanner.nextInt();
-//             int b = scanner.nextInt();
-
-//             if (a == 0 && b == 0) {
-//                 break;
-//             }
-
-//             int count = 0;
-
-//             // 找出大於等於 a 的最小完全平方數
-//             int start = (int) Math.ceil(Math.sqrt(a));
-//             // 找出小於等於 b 的最大完全平方數
-//             int end = (int) Math.floor(Math.sqrt(b));
-
-//             // 計算位於範圍內的完全平方數的個數
-//             count = end - start + 1;
-
-//             System.out.println(count);
-//         }
-
-//         scanner.close();
-//     }
-// }
