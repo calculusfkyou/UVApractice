@@ -1,3 +1,4 @@
+# 兩數公因數不等於１才過
 import math
 
 pair = 1
