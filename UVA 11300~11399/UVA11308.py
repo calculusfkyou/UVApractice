@@ -1,3 +1,4 @@
+# 算每個食譜所需預算，若沒有超過，則將沒超過的食譜名字按照預算遞增和食譜名字的字典順序排序，然後印出
 def main():
     price_in_dollars_for_one_unit_of_ingredient = {}
     t = int(input())
@@ -7,7 +8,7 @@ def main():
         m, n, budget = map(int, input().split())
         for j in range(m):
             name, dollars = input().split()
-            price_in_dollars_for_one_unit_of_ingredient[name] = int(dollars)
+            price_in_dollars_for_one_unit_of_ingredient[name] = int(dollars)  # 將食材的單位價錢存入字典
         ans = []
         for j in range(n):
             recipe_name = input()
