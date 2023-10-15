@@ -19,8 +19,8 @@ def main():
                 sub_budget += price_in_dollars_for_one_unit_of_ingredient[requirement] * int(number)
             if sub_budget <= budget:
                 ans.append([recipe_name, sub_budget])
-        ans.sort(key=lambda ans: ans[0])
-        ans.sort(key=lambda ans: ans[1])
+        ans.sort(key=lambda ans: ans[0])  # 食譜字典順序
+        ans.sort(key=lambda ans: ans[1])  # 食譜預算
         if len(ans) == 0:
             print("Too expensive!")
         else:
