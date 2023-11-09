@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/UVApractice.iml" filepath="$PROJECT_DIR$/.idea/UVApractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Py-Test.iml" filepath="$PROJECT_DIR$/.idea/Py-Test.iml" />
     </modules>
   </component>
 </project>
