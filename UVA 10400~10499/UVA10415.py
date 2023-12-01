@@ -12,21 +12,18 @@ finger = [["c", 0, 1, 1, 1, 0, 0, 1, 1, 1, 1],
           ["G", 1, 1, 1, 1, 0, 0, 0, 0, 0, 0],
           ["A", 1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
           ["B", 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]]
-t = int(input())
-for i in range(t):
-    case = input()
-    state = [0] * 11  # 現在是否按下的狀態 #不管第0個
-    num = [0] * 11  # 最後把第0個pop
-    for j in range(len(case)):
-        t = case[j]
+n = int(input())
+for i in range(n):
+    count, current = [0 for j in range(10)], [0 for j in range(10)]
+    st = input()
+    for j in range(len(st)):
+        temp = ""
         for k in range(len(finger)):
-            if finger[k][0] == t:
-                temp = k  #
-        for k in range(1, len(state)):
-            if state[k] == 0 and finger[temp][k] == 1:
-                num[k] += 1
-                state[k] = 1
-            if finger[temp][k] == 0:
-                state[k] = 0
-    num.pop(0)
-    print(*num)
+            if finger[k][0] == st[j]:
+                temp = finger[k][1:]
+                break
+        for k in range(10):
+            if (current[k] != temp[k]) & temp[k] == 1:
+                count[k] += 1
+        current = temp
+    print(*count)
