@@ -1,4 +1,5 @@
 # 就是一個公式，可以記
+# https://www.youtube.com/watch?v=03w6m8uYCqU&list=PLYhy6KLAgQE6QpZ5dUz-p-5dC1bWCTuIi&index=37
 import math
 
 s, distance = 0, 0

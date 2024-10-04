@@ -47,7 +47,7 @@ while True:
         break
 
 # v2
-# 建議參考
+# 建議參考：https://www.youtube.com/watch?v=4loEaRKBMlY&list=PLYhy6KLAgQE6QpZ5dUz-p-5dC1bWCTuIi&index=25
 while 1:
     try:
         n = input()

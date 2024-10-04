@@ -29,3 +29,31 @@ for i in range(t):
                 else:
                     break
             print(length)
+
+# v2
+for i in range(int(input())):
+    m, n, q = map(int, input().split())
+    print(m, n, q)
+    g = []
+    for j in range(m):
+        g.append(input())
+    for j in range(q):
+        r, c = map(int, input().split())
+        pivot = g[r][c]
+        count = 1
+        ans = 1
+        record = 0
+        while 1:
+            try:
+                for k in range(r - count, r + count + 1):
+                    if g[k][c - count:c + count + 1] != pivot * (ans + 2):
+                        # print(g[k][c-count:c+count+1])
+                        record = 1
+                        break
+                if record:
+                    break
+                count += 1
+                ans += 2
+            except:
+                break
+        print(ans)
