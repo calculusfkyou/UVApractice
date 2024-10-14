@@ -53,3 +53,23 @@ for i in range(maxlen):
     for j in range(len(s) - 1, -1, -1):
         print(s[j][i], end="")
     print()
+
+# v3
+s = []
+while 1:
+    try:
+        s.append(input())
+    except EOFError:
+        break
+m = 0
+for i in s:
+    if len(i) >= m:
+        m = len(i)
+
+for i in range(m):
+    for j in range(len(s) - 1, -1, -1):
+        if i >= len(s[j]):
+            print(" ", end="")
+        else:
+            print(s[j][i], end="")
+    print()
