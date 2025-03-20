@@ -57,3 +57,32 @@ for i in range(int(input())):
             except:
                 break
         print(ans)
+
+# v3
+for i in range(int(input())):
+    m, n, q = map(int, input().split())
+    print(m, n, q)
+    grid = []
+    for k in range(m):
+        grid.append(input())
+    for k in range(q):
+        a, b = map(int, input().split())
+        ans = 1
+        record = 1
+        while True:
+            try:
+                for j in range(a - ans, a + ans + 1):
+                    for h in range(b - ans, b + ans + 1):
+                        if grid[j][h] != grid[a][b] or (j < 0 or j > m or h < 0 or h > n):
+                            record = 0
+                            break
+                    #	print(j, h)
+                    if not record:
+                        break
+                if not record:
+                    break
+                else:
+                    ans += 1
+            except:
+                break
+        print(ans * 2 - 1)
